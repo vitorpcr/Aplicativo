@@ -1,8 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
 
-export default function App() {
+import MainStack from './src/stacks/MainStack';
+
+
+export default () => {
   return (
+<<<<<<< HEAD
     <View style={styles.container}>
       <Text>vitor</Text>
       <StatusBar style="auto" />
@@ -18,3 +22,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+=======
+    <NavigationContainer>
+      <MainStack />
+    </NavigationContainer>
+  )
+}
+>>>>>>> edb63825adb4b546e5b5e3a5ab1e04ae9f602e6d
